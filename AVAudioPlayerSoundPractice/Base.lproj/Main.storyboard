@@ -24,14 +24,34 @@
                                     <action selector="soundButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ycj-rU-hHX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="０" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFi-fS-bJP">
+                                <rect key="frame" x="157" y="261" width="100.5" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dD1-Al-2wm">
+                                <rect key="frame" x="150" y="523" width="114" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UuC-YQ-rOo" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="0IH-1a-Zvo"/>
+                            <constraint firstItem="dD1-Al-2wm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="GMw-Lk-whU"/>
+                            <constraint firstItem="dD1-Al-2wm" firstAttribute="top" secondItem="UuC-YQ-rOo" secondAttribute="bottom" constant="54.5" id="Kas-8U-zMq"/>
+                            <constraint firstItem="yFi-fS-bJP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L4x-tU-Q90"/>
+                            <constraint firstItem="yFi-fS-bJP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="217" id="Uli-dP-FY9"/>
                             <constraint firstItem="UuC-YQ-rOo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XMs-XU-Tf4"/>
+                            <constraint firstItem="dD1-Al-2wm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wOM-KS-JZi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countLabel" destination="yFi-fS-bJP" id="0G1-XE-Hzs"/>
+                        <outlet property="countTextField" destination="dD1-Al-2wm" id="6Kv-wL-OXT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
