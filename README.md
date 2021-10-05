@@ -1,6 +1,6 @@
 # AVAudioPlayerSoundPractice
 
-# 解説
+# AVAudioPlayerで音を鳴らす
 
 使用する音声ファイルをプロジェクトに導入します。今回はSoundsディレクトリを作成し、その中に入れました。
 
@@ -19,3 +19,7 @@
 呼び出す時、currentTimeを０にしておくことで、ボタンが押されるたびに初めから再生できます。
 
 　`audioPlayer?.currentTime = 0`
+
+# バックグラウンドでも音を鳴らしたい！
+
+https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio
