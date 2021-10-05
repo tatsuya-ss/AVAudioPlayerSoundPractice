@@ -14,6 +14,7 @@
 		75EC6603270B21790001F464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75EC6602270B21790001F464 /* Assets.xcassets */; };
 		75EC6606270B21790001F464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75EC6604270B21790001F464 /* LaunchScreen.storyboard */; };
 		75EC660F270B22920001F464 /* BellSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75EC660E270B22920001F464 /* BellSound.mp3 */; };
+		75EC6615270C34E60001F464 /* CountingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EC6614270C34E60001F464 /* CountingState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		75EC6605270B21790001F464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75EC6607270B21790001F464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EC660E270B22920001F464 /* BellSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = BellSound.mp3; path = ../../../../../Downloads/BellSound.mp3; sourceTree = "<group>"; };
+		75EC6614270C34E60001F464 /* CountingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		75EC65F8270B21740001F464 /* AVAudioPlayerSoundPractice */ = {
 			isa = PBXGroup;
 			children = (
+				75EC6613270C34D40001F464 /* Utilities */,
 				75EC660D270B22330001F464 /* Sounds */,
 				75EC65F9270B21740001F464 /* AppDelegate.swift */,
 				75EC65FB270B21740001F464 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				75EC660E270B22920001F464 /* BellSound.mp3 */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		75EC6613270C34D40001F464 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				75EC6614270C34E60001F464 /* CountingState.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			files = (
 				75EC65FE270B21740001F464 /* ViewController.swift in Sources */,
 				75EC65FA270B21740001F464 /* AppDelegate.swift in Sources */,
+				75EC6615270C34E60001F464 /* CountingState.swift in Sources */,
 				75EC65FC270B21740001F464 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
