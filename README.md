@@ -23,3 +23,7 @@
 # バックグラウンドでも音を鳴らしたい！
 
 https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/enabling_background_audio
+
+https://developer.apple.com/documentation/avfaudio/avaudiosession
+
+https://developer.apple.com/documentation/avfoundation/media_playback_and_selection/creating_a_basic_video_player_ios_and_tvos/playing_audio_from_a_video_asset_in_the_background
