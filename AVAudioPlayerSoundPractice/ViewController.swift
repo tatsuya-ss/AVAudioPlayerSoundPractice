@@ -26,11 +26,12 @@ final class ViewController: UIViewController {
         countTextField.resignFirstResponder()
     }
     
+    // TODO: バックグラウンドでタイムアップした時は、ローカル通知を送る方向で検討
     @IBAction func soundButtonDidTap(_ sender: Any) {
         defer { countTextField.resignFirstResponder() }
         guard let count = countTextField.text,
               !count.isEmpty,
-        let countInt = Int(count) else { return }
+              let countInt = Int(count) else { return }
         audioPlayer?.currentTime = 0
         let countingState = CountingState(startDate: .now,
                                           countingSeconds: countInt)
